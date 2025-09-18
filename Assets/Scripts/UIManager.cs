@@ -2,23 +2,34 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+
 public class UIManager : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    [Header("UI Panels")]
+    public GameObject pausePanel;   // Assign in Inspector
+    public GameObject gameplayPanel; // (optional) gameplay UI
+
+    // ---------------- BUTTON FUNCTIONS ----------------
+    public void ShowPausePanel()
     {
-        
+        if (pausePanel != null)
+            pausePanel.SetActive(true);
+
+        if (gameplayPanel != null)
+            gameplayPanel.SetActive(false);
+
+        Time.timeScale = 0f; // Pause the game
     }
 
-    // Update is called once per frame
-    void Update()
+    public void HidePausePanel()
     {
-        
-    }
+        if (pausePanel != null)
+            pausePanel.SetActive(false);
 
-    public void LoadGamePlayScene()
-    {
-        SceneManager.LoadScene("LevelSelectScene");
+        if (gameplayPanel != null)
+            gameplayPanel.SetActive(true);
+
+        Time.timeScale = 1f; // Resume the game
     }
 
     public void Quit()
@@ -28,12 +39,11 @@ public class UIManager : MonoBehaviour
 
     public void Settings()
     {
-
+        Debug.Log("Settings clicked!");
     }
-    
+
     public void HomeScene()
     {
-         SceneManager.LoadScene("HomeScene");
+        SceneManager.LoadScene("HomeScene");
     }
-
 }
