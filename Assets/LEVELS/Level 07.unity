@@ -13,7 +13,7 @@ OcclusionCullingSettings:
 --- !u!104 &2
 RenderSettings:
   m_ObjectHideFlags: 0
-  serializedVersion: 10
+  serializedVersion: 9
   m_Fog: 1
   m_FogColor: {r: 0.7960785, g: 0.7960785, b: 0.7960785, a: 1}
   m_FogMode: 3
@@ -38,12 +38,12 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 12
+  m_GIWorkflowMode: 1
   m_GISettings:
     serializedVersion: 2
     m_BounceScale: 1
@@ -66,6 +66,9 @@ LightmapSettings:
     m_LightmapParameters: {fileID: 0}
     m_LightmapsBakeMode: 1
     m_TextureCompression: 1
+    m_FinalGather: 0
+    m_FinalGatherFiltering: 1
+    m_FinalGatherRayCount: 256
     m_ReflectionCompression: 2
     m_MixedBakeMode: 2
     m_BakeBackend: 1
@@ -191,8 +194,6 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
   m_RayTraceProcedural: 0
-  m_RayTracingAccelStructBuildFlagsOverride: 0
-  m_RayTracingAccelStructBuildFlags: 1
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -298,8 +299,6 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
   m_RayTraceProcedural: 0
-  m_RayTracingAccelStructBuildFlagsOverride: 0
-  m_RayTracingAccelStructBuildFlags: 1
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -369,9 +368,81 @@ PrefabInstance:
       propertyPath: m_Delegates.Array.data[1].callback.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: StopMoving
       objectReference: {fileID: 0}
+    - target: {fileID: 3589562278490776168, guid: 10ac5d5205cc6384187c32a2fc1a8872, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3589562278490776168, guid: 10ac5d5205cc6384187c32a2fc1a8872, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1513559116}
+    - target: {fileID: 3589562278490776168, guid: 10ac5d5205cc6384187c32a2fc1a8872, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: ShowPausePanel
+      objectReference: {fileID: 0}
+    - target: {fileID: 3589562278490776168, guid: 10ac5d5205cc6384187c32a2fc1a8872, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: UIManager, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 3589562278490776168, guid: 10ac5d5205cc6384187c32a2fc1a8872, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 3708376352502561108, guid: 10ac5d5205cc6384187c32a2fc1a8872, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5037012837165299413, guid: 10ac5d5205cc6384187c32a2fc1a8872, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5037012837165299413, guid: 10ac5d5205cc6384187c32a2fc1a8872, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1513559116}
+    - target: {fileID: 5037012837165299413, guid: 10ac5d5205cc6384187c32a2fc1a8872, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: HidePausePanel
+      objectReference: {fileID: 0}
+    - target: {fileID: 5037012837165299413, guid: 10ac5d5205cc6384187c32a2fc1a8872, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: UIManager, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 5037012837165299413, guid: 10ac5d5205cc6384187c32a2fc1a8872, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 5087932958167711669, guid: 10ac5d5205cc6384187c32a2fc1a8872, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1061245907}
+    - target: {fileID: 5087932958167711669, guid: 10ac5d5205cc6384187c32a2fc1a8872, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: NextLevel
+      objectReference: {fileID: 0}
     - target: {fileID: 6010658050540664343, guid: 10ac5d5205cc6384187c32a2fc1a8872, type: 3}
       propertyPath: m_Name
       value: Canvas
+      objectReference: {fileID: 0}
+    - target: {fileID: 7011742461274706311, guid: 10ac5d5205cc6384187c32a2fc1a8872, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7011742461274706311, guid: 10ac5d5205cc6384187c32a2fc1a8872, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1513559116}
+    - target: {fileID: 7011742461274706311, guid: 10ac5d5205cc6384187c32a2fc1a8872, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: LoadGamePlayScene
+      objectReference: {fileID: 0}
+    - target: {fileID: 7011742461274706311, guid: 10ac5d5205cc6384187c32a2fc1a8872, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: UIManager, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 7011742461274706311, guid: 10ac5d5205cc6384187c32a2fc1a8872, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 8310027386020273217, guid: 10ac5d5205cc6384187c32a2fc1a8872, type: 3}
       propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -474,16 +545,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 10ac5d5205cc6384187c32a2fc1a8872, type: 3}
---- !u!1 &221561793 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8827498324532569836, guid: 10ac5d5205cc6384187c32a2fc1a8872, type: 3}
-  m_PrefabInstance: {fileID: 221561792}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &221561794 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7637331204757780299, guid: 10ac5d5205cc6384187c32a2fc1a8872, type: 3}
-  m_PrefabInstance: {fileID: 221561792}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &221561795 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3215335434637923675, guid: 10ac5d5205cc6384187c32a2fc1a8872, type: 3}
@@ -509,7 +570,7 @@ PrefabInstance:
     - target: {fileID: 1701315192434193486, guid: 812c68ab9b4d2354295da6fb215d2a28, type: 3}
       propertyPath: topButton
       value: 
-      objectReference: {fileID: 221561794}
+      objectReference: {fileID: 1549572633}
     - target: {fileID: 1701315192434193486, guid: 812c68ab9b4d2354295da6fb215d2a28, type: 3}
       propertyPath: leftButton
       value: 
@@ -521,7 +582,15 @@ PrefabInstance:
     - target: {fileID: 1701315192434193486, guid: 812c68ab9b4d2354295da6fb215d2a28, type: 3}
       propertyPath: levelCompleteCanvas
       value: 
-      objectReference: {fileID: 221561793}
+      objectReference: {fileID: 0}
+    - target: {fileID: 6918558985596517524, guid: 812c68ab9b4d2354295da6fb215d2a28, type: 3}
+      propertyPath: pausePanel
+      value: 
+      objectReference: {fileID: 1922634547}
+    - target: {fileID: 6918558985596517524, guid: 812c68ab9b4d2354295da6fb215d2a28, type: 3}
+      propertyPath: gameplayPanel
+      value: 
+      objectReference: {fileID: 626421427}
     - target: {fileID: 6977818825679409149, guid: 812c68ab9b4d2354295da6fb215d2a28, type: 3}
       propertyPath: m_LocalPosition.x
       value: 1093.8353
@@ -562,7 +631,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1701315192434193486, guid: 812c68ab9b4d2354295da6fb215d2a28, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -639,8 +709,6 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
   m_RayTraceProcedural: 0
-  m_RayTracingAccelStructBuildFlagsOverride: 0
-  m_RayTracingAccelStructBuildFlags: 1
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -811,8 +879,6 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
   m_RayTraceProcedural: 0
-  m_RayTracingAccelStructBuildFlagsOverride: 0
-  m_RayTracingAccelStructBuildFlags: 1
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -918,8 +984,6 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
   m_RayTraceProcedural: 0
-  m_RayTracingAccelStructBuildFlagsOverride: 0
-  m_RayTracingAccelStructBuildFlags: 1
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -1025,8 +1089,6 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
   m_RayTraceProcedural: 0
-  m_RayTracingAccelStructBuildFlagsOverride: 0
-  m_RayTracingAccelStructBuildFlags: 1
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -1060,6 +1122,11 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 614431685}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &626421427 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8216582929468998346, guid: 10ac5d5205cc6384187c32a2fc1a8872, type: 3}
+  m_PrefabInstance: {fileID: 221561792}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &626666644
 GameObject:
   m_ObjectHideFlags: 0
@@ -1132,8 +1199,6 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
   m_RayTraceProcedural: 0
-  m_RayTracingAccelStructBuildFlagsOverride: 0
-  m_RayTracingAccelStructBuildFlags: 1
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -1239,8 +1304,6 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
   m_RayTraceProcedural: 0
-  m_RayTracingAccelStructBuildFlagsOverride: 0
-  m_RayTracingAccelStructBuildFlags: 1
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -1300,8 +1363,9 @@ Light:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 705507993}
   m_Enabled: 1
-  serializedVersion: 11
+  serializedVersion: 10
   m_Type: 1
+  m_Shape: 0
   m_Color: {r: 1, g: 0.95686275, b: 0.8392157, a: 1}
   m_Intensity: 1
   m_Range: 10
@@ -1404,7 +1468,7 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 864644943919025717, guid: 33595fb8801bf4348b82707e12944878, type: 3}
-      propertyPath: 'm_Materials.Array.data[0]'
+      propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: a1a4f0d275544184d87507d2f6131139, type: 2}
     - target: {fileID: 7512859872587750632, guid: 33595fb8801bf4348b82707e12944878, type: 3}
@@ -1540,8 +1604,6 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
   m_RayTraceProcedural: 0
-  m_RayTracingAccelStructBuildFlagsOverride: 0
-  m_RayTracingAccelStructBuildFlags: 1
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -1797,8 +1859,6 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
   m_RayTraceProcedural: 0
-  m_RayTracingAccelStructBuildFlagsOverride: 0
-  m_RayTracingAccelStructBuildFlags: 1
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -1904,8 +1964,6 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
   m_RayTraceProcedural: 0
-  m_RayTracingAccelStructBuildFlagsOverride: 0
-  m_RayTracingAccelStructBuildFlags: 1
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -2022,8 +2080,6 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
   m_RayTraceProcedural: 0
-  m_RayTracingAccelStructBuildFlagsOverride: 0
-  m_RayTracingAccelStructBuildFlags: 1
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -2129,8 +2185,6 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
   m_RayTraceProcedural: 0
-  m_RayTracingAccelStructBuildFlagsOverride: 0
-  m_RayTracingAccelStructBuildFlags: 1
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -2164,51 +2218,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1154247960}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!1 &1203898757
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1203898759}
-  - component: {fileID: 1203898758}
-  m_Layer: 0
-  m_Name: LevelManager
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1203898758
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1203898757}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6e57ac0db47ad094ca0b0decc4afec30, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  delay: 3
---- !u!4 &1203898759
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1203898757}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1245048319
 GameObject:
   m_ObjectHideFlags: 0
@@ -2281,8 +2290,6 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
   m_RayTraceProcedural: 0
-  m_RayTracingAccelStructBuildFlagsOverride: 0
-  m_RayTracingAccelStructBuildFlags: 1
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -2388,8 +2395,6 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
   m_RayTraceProcedural: 0
-  m_RayTracingAccelStructBuildFlagsOverride: 0
-  m_RayTracingAccelStructBuildFlags: 1
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -2495,8 +2500,6 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
   m_RayTraceProcedural: 0
-  m_RayTracingAccelStructBuildFlagsOverride: 0
-  m_RayTracingAccelStructBuildFlags: 1
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -2541,6 +2544,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ef100b0bc0075b841a2c30f2a20a4af3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &1549572633 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3001977723525226137, guid: 10ac5d5205cc6384187c32a2fc1a8872, type: 3}
+  m_PrefabInstance: {fileID: 221561792}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1590125098
 GameObject:
   m_ObjectHideFlags: 0
@@ -2613,8 +2621,6 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
   m_RayTraceProcedural: 0
-  m_RayTracingAccelStructBuildFlagsOverride: 0
-  m_RayTracingAccelStructBuildFlags: 1
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -2648,6 +2654,11 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1590125098}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1774824585 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2364476043415938588, guid: 10ac5d5205cc6384187c32a2fc1a8872, type: 3}
+  m_PrefabInstance: {fileID: 221561792}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1816817759 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7286880527415871610, guid: 2fb7e38571327f440a88a2a6a63a3659, type: 3}
@@ -2725,8 +2736,6 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
   m_RayTraceProcedural: 0
-  m_RayTracingAccelStructBuildFlagsOverride: 0
-  m_RayTracingAccelStructBuildFlags: 1
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -2832,8 +2841,6 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
   m_RayTraceProcedural: 0
-  m_RayTracingAccelStructBuildFlagsOverride: 0
-  m_RayTracingAccelStructBuildFlags: 1
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -2939,8 +2946,6 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
   m_RayTraceProcedural: 0
-  m_RayTracingAccelStructBuildFlagsOverride: 0
-  m_RayTracingAccelStructBuildFlags: 1
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -2974,6 +2979,11 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1919487543}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1922634547 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3708376352502561108, guid: 10ac5d5205cc6384187c32a2fc1a8872, type: 3}
+  m_PrefabInstance: {fileID: 221561792}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1953893216
 GameObject:
   m_ObjectHideFlags: 0
@@ -3046,8 +3056,6 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
   m_RayTraceProcedural: 0
-  m_RayTracingAccelStructBuildFlagsOverride: 0
-  m_RayTracingAccelStructBuildFlags: 1
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -3219,7 +3227,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44cc4ddd41dd3fb4c852a52a5978d57f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  levelChanger: {fileID: 1203898758}
+  winPanel: {fileID: 0}
 --- !u!1001 &3461755011198661167
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3237,7 +3245,7 @@ PrefabInstance:
       value: Obstacles
       objectReference: {fileID: 0}
     - target: {fileID: 4624092514681016015, guid: 2fb7e38571327f440a88a2a6a63a3659, type: 3}
-      propertyPath: 'm_Materials.Array.data[0]'
+      propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: a1a4f0d275544184d87507d2f6131139, type: 2}
     - target: {fileID: 6148943189332609503, guid: 2fb7e38571327f440a88a2a6a63a3659, type: 3}
@@ -3536,9 +3544,13 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8501294072571238559, guid: f76a5a8c0ded54a41a2af9670db63ebc, type: 3}
+      propertyPath: WinPanel
+      value: 
+      objectReference: {fileID: 1774824585}
+    - target: {fileID: 8501294072571238559, guid: f76a5a8c0ded54a41a2af9670db63ebc, type: 3}
       propertyPath: CompleteLevelUI
       value: 
-      objectReference: {fileID: 221561793}
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3559,5 +3571,4 @@ SceneRoots:
   - {fileID: 929741348}
   - {fileID: 3446820138343514043}
   - {fileID: 221561792}
-  - {fileID: 1203898759}
   - {fileID: 231335023}

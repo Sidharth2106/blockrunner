@@ -10,6 +10,10 @@ public class UIManager : MonoBehaviour
     public GameObject gameplayPanel; // (optional) gameplay UI
 
     // ---------------- BUTTON FUNCTIONS ----------------
+    public void LoadGamePlayScene()
+    {
+        SceneManager.LoadScene("LevelSelectScene");
+    }
     public void ShowPausePanel()
     {
         if (pausePanel != null)
