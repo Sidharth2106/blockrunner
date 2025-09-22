@@ -1226,6 +1226,10 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: ShowPausePanel
       objectReference: {fileID: 0}
+    - target: {fileID: 1676245308744523637, guid: 45a39a4cf736d954eabc14ad98bcabe2, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: ab3bd5fb55b590d489984277f7f9e913, type: 3}
     - target: {fileID: 8935590857732341791, guid: 45a39a4cf736d954eabc14ad98bcabe2, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -1260,15 +1264,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8935590857732341791, guid: 45a39a4cf736d954eabc14ad98bcabe2, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.7400924
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8935590857732341791, guid: 45a39a4cf736d954eabc14ad98bcabe2, type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.7400924
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8935590857732341791, guid: 45a39a4cf736d954eabc14ad98bcabe2, type: 3}
       propertyPath: m_LocalScale.z
-      value: 0.7400924
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8935590857732341791, guid: 45a39a4cf736d954eabc14ad98bcabe2, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1916,25 +1920,9 @@ PrefabInstance:
       propertyPath: m_Delegates.Array.data[1].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1834461809}
-    - target: {fileID: 602488996055988093, guid: df7c86021e02e6b4b9749f2f5cfb3823, type: 3}
-      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: MoveLeft
-      objectReference: {fileID: 0}
     - target: {fileID: 5580244805756511091, guid: df7c86021e02e6b4b9749f2f5cfb3823, type: 3}
       propertyPath: m_Name
       value: Gameplay Panel
-      objectReference: {fileID: 0}
-    - target: {fileID: 6288712818666160673, guid: df7c86021e02e6b4b9749f2f5cfb3823, type: 3}
-      propertyPath: m_fontAsset
-      value: 
-      objectReference: {fileID: 11400000, guid: 5d0c92ee32d4b884287583009d38b85d, type: 2}
-    - target: {fileID: 6288712818666160673, guid: df7c86021e02e6b4b9749f2f5cfb3823, type: 3}
-      propertyPath: m_sharedMaterial
-      value: 
-      objectReference: {fileID: -2956186838647040395, guid: 5d0c92ee32d4b884287583009d38b85d, type: 2}
-    - target: {fileID: 6288712818666160673, guid: df7c86021e02e6b4b9749f2f5cfb3823, type: 3}
-      propertyPath: m_hasFontAssetChanged
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6762519181134990188, guid: df7c86021e02e6b4b9749f2f5cfb3823, type: 3}
       propertyPath: Player
