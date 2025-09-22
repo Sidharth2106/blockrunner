@@ -6,14 +6,16 @@ using UnityEngine.SceneManagement;
 public class UIManager : MonoBehaviour
 {
     [Header("UI Panels")]
-    public GameObject pausePanel;   // Assign in Inspector
+    public GameObject pausePanel;    // Assign in Inspector
     public GameObject gameplayPanel; // (optional) gameplay UI
 
     // ---------------- BUTTON FUNCTIONS ----------------
     public void LoadGamePlayScene()
     {
+        Time.timeScale = 1f; // reset before loading
         SceneManager.LoadScene("LevelSelectScene");
     }
+
     public void ShowPausePanel()
     {
         if (pausePanel != null)
@@ -48,6 +50,14 @@ public class UIManager : MonoBehaviour
 
     public void HomeScene()
     {
+        Time.timeScale = 1f; // reset before loading
         SceneManager.LoadScene("HomeScene");
+    }
+
+    // ---------------- SAFETY RESET ----------------
+    private void Awake()
+    {
+        // Ensure game is never stuck in pause when entering a scene
+        Time.timeScale = 1f;
     }
 }
